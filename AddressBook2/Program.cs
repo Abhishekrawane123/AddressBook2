@@ -29,12 +29,19 @@ namespace AddressBook2
                         string city = Console.ReadLine();
                         addressClass.edit(fName, lName, city);
                         break;
+                    case 4:
+                        Console.WriteLine("Enter the FirstName to Change the LastName And City");
+                        string firstName = Console.ReadLine();
+                        addressClass.delete(firstName);
+                        break;
                     default:
                         defCout++;
                         break;
+
                 }
 
             }
+
         }
     }
 }

@@ -81,5 +81,29 @@ namespace AddressBook2
                 Console.WriteLine("Name is Not Exist");
             }
         }
+
+        public void delete(string fName)
+        {
+            Boolean find = false;
+            for (int i = 0; i < listUser.Count; i++)
+            {
+                if (listUser[i].firstName.Equals(fName))
+                {
+                    find = true;
+                    listUser.RemoveAt(i);
+
+                }
+
+            }
+
+            if (find == false)
+            {
+                Console.WriteLine("Name is Not Exist");
+            }
+            else
+            {
+                Console.WriteLine("User deleted");
+            }
+        }
     }
 }
