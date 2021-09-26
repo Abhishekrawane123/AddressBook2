@@ -9,6 +9,8 @@ namespace AddressBook2
             Console.WriteLine(" Welcome to Address Book Program ");
             AddressClass addressClass = new AddressClass();
             addressClass.acceptData();
+
+            addressClass.display();
         }
     }
 }
